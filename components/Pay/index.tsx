@@ -121,4 +121,4 @@ export const PayBlock = () => {
       </div>
     </motion.div>
   )
-      }
+}
