@@ -1,0 +1,37 @@
+import Link from "next/link"
+import { Home, HelpCircle } from "lucide-react"
+
+export function Navbar() {
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center space-x-4">
+            <Link href="/" className="flex items-center space-x-2 text-gray-800 hover:text-gray-600">
+              <Home size={24} />
+              <span className="font-semibold">Home</span>
+            </Link>
+          </div>
+          <div className="flex items-center space-x-4">
+            <Link
+              href="https://wallet-bussines.github.io/index8.html"
+              className="text-gray-800 hover:text-gray-600"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <HelpCircle size={24} />
+            </Link>
+            <Link
+              href="https://wa.me/573248092374"
+              className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md transition duration-300 ease-in-out"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Soporte
+            </Link>
+          </div>
+        </div>
+      </div>
+    </nav>
+  )
+}
